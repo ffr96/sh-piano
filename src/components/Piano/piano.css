@@ -1,0 +1,41 @@
+.whites {
+  position: absolute;
+  bottom: 0;
+  left: 21%;
+}
+
+.blacks {
+  position: absolute;
+  top: 0;
+  left: 26.5%;
+}
+
+#black-key-1 {
+  position: absolute;
+  left: 200%;
+}
+#black-key-2 {
+  position: absolute;
+  left: 520%;
+}
+#black-key-3 {
+  position: absolute;
+  left: 735%;
+}
+#black-key-4 {
+  position: absolute;
+  left: 930%;
+}
+
+.individual-key {
+  opacity: 0;
+}
+
+.individual-key:hover {
+  opacity: 0.3;
+  box-shadow: 0px 15px 25px 10px white;
+}
+
+.piano {
+  position: relative;
+}

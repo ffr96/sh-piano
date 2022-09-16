@@ -1,0 +1,70 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif, Palatino;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+  font-family: 'SilentHill';
+  src: url(./assets/SLNTHLC.TTF) format('truetype'),
+    url(./assets/SLNTHLE.TTF) format('truetype'),
+    url(./assets/SLNTHLN.TTF) format('truetype');
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body,
+html {
+  margin: 0;
+  display: flex;
+  min-height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  place-items: center;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 1em;
+    line-heigth: 0.5;
+  }
+  body {
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+}
+
+a {
+  color: darkred;
+  position: relative;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+li {
+  padding-block: 5px;
+}

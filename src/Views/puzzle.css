@@ -1,0 +1,36 @@
+.puzzle-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+  padding-right: 50;
+  text-align: center;
+}
+
+.puzzle-container * {
+  font-family: Palatino;
+  letter-spacing: 2px;
+  background: -webkit-radial-gradient(bottom, #3ede69, #d2f5bf);
+  -webkit-text-stroke: 0.5px #000;
+  -webkit-background-clip: text;
+  border: black 1px;
+  -webkit-text-fill-color: transparent;
+}
+
+.next-button {
+  position: absolute;
+  z-index: 10;
+  color: #3ede69;
+  bottom: 0;
+  left: 50%;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+}
+
+.h1 {
+  margin: 2px;
+}
