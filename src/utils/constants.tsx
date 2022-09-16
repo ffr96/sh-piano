@@ -151,3 +151,16 @@ export const tips = {
     ],
   },
 };
+
+export const win = {
+  eng: {
+    title: 'Well done!',
+    time: 'Time spent here',
+    keys: 'Keys played',
+  },
+  spa: {
+    title: 'Felicitaciones!',
+    time: 'Estuviste aquí',
+    keys: 'Tocaste las siguientes teclas',
+  },
+};
