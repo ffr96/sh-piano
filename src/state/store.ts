@@ -18,8 +18,10 @@ interface ViewState {
 interface GameState {
   keysPlayed: Array<string>;
   won: boolean;
+  streak: number;
   playKey: (key: string) => void;
   resetStreak: () => void;
+  increaseStreak: () => void;
 }
 
 const createLangStore: StateCreator<
@@ -54,13 +56,18 @@ const createGameState: StateCreator<
   GameState
 > = (set) => ({
   keysPlayed: [],
+  streak: 0,
   won: false,
   playKey: (key: string) =>
     set((state) => ({
       keysPlayed: [...state.keysPlayed, key],
-      won: state.keysPlayed.length + 1 === 5 ? true : false,
     })),
-  resetStreak: () => set(() => ({ keysPlayed: [] })),
+  increaseStreak: () =>
+    set((state) => ({
+      streak: state.streak + 1,
+      won: state.streak + 1 === 5 ? true : false,
+    })),
+  resetStreak: () => set(() => ({ streak: 0 })),
 });
 
 const useGeneralStore = create<LangState & ViewState & GameState>()((...a) => ({

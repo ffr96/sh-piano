@@ -6,7 +6,7 @@ const Spoilers = ({ tips }: { tips: Array<string> }) => {
   const [showTips, setShowTips] = useState<Array<boolean>>(
     tips.map(() => false)
   );
-  console.log(showTips);
+
   const handleClick = (index: number) => {
     const newTips = [...showTips];
     newTips[index] = !showTips[index];

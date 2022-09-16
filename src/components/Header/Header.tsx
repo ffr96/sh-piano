@@ -23,12 +23,12 @@ const Header = () => {
 
   return (
     <div className='header'>
-      <h3 onClick={() => handleClick('about')}>{headerInfo[lang].about}</h3>
-      <h3 onClick={() => handleClick('puzzle')}>{headerInfo[lang].puzzle}</h3>
-      <h3 onClick={() => handleClick('tip')}>{headerInfo[lang].tips}</h3>
-      <h3 onClick={() => handleLang()}>
+      <h2 onClick={() => handleClick('about')}>{headerInfo[lang].about}</h2>
+      <h2 onClick={() => handleClick('puzzle')}>{headerInfo[lang].puzzle}</h2>
+      <h2 onClick={() => handleClick('tip')}>{headerInfo[lang].tips}</h2>
+      <h2 onClick={() => handleLang()}>
         {headerInfo[lang].language}: {lang}
-      </h3>
+      </h2>
     </div>
   );
 };

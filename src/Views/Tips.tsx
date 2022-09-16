@@ -16,9 +16,9 @@ const TipsModal = () => {
     <Modal opened={tipView} onClose={handleClose}>
       <h1 style={{ textAlign: 'center' }}>{tips[lang].title}</h1>
       {tips[lang].warning}
-      <h2>
+      <h3>
         <Spoilers tips={tips[lang].content} />
-      </h2>
+      </h3>
     </Modal>
   );
 };

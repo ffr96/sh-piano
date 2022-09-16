@@ -4,12 +4,14 @@
   flex-direction: column;
   justify-content: center;
   z-index: 10;
+  margin: 35px;
   padding-right: 50;
   text-align: center;
 }
 
 .puzzle-container * {
   font-family: Palatino;
+  position: relative;
   letter-spacing: 2px;
   background: -webkit-radial-gradient(bottom, #3ede69, #d2f5bf);
   -webkit-text-stroke: 0.5px #000;
@@ -33,4 +35,12 @@
 
 .h1 {
   margin: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  .next-button {
+    position: absolute;
+    left: 100%;
+    bottom: 50%;
+  }
 }

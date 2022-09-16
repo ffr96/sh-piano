@@ -4,23 +4,27 @@ import haloBg from '@/assets/halo-of-the-sun.png';
 
 import './modal.css';
 
-export const Modal = (props: ModalProps & { transparent?: boolean }) => {
+export const Modal = ({
+  transparent,
+  ...props
+}: ModalProps & { transparent?: boolean }) => {
   const isWide = getMediaWidth();
   return (
     <MantineModal
       centered
       withCloseButton={false}
-      {...props}
+      opened={props.opened}
+      onClose={props.onClose}
       size={isWide ? 1050 : 400}
       styles={{
         modal: {
-          backgroundColor: props.transparent ? 'transparent' : 'lightgrey',
+          backgroundColor: transparent ? 'transparent' : 'lightgrey',
         },
       }}
     >
       <div className='content'>
         {props.children}
-        {props.transparent == undefined && (
+        {transparent == undefined && (
           <img
             src={haloBg}
             alt='Halo of the sun logo'

@@ -33,18 +33,18 @@ const PuzzleModal = () => {
       <div className='puzzle-container'>
         {page === 0 && puzzle.title && <h1>{puzzle.title}</h1>}
         {puzzle.stranzas.slice(page, page + 3).map((text, i) => {
-          return <h1 key={i}>{text}</h1>;
+          return <h2 key={i}>{text}</h2>;
         })}
       </div>
       <div className='image-container'>
         <img
           src={background}
           width={isWide ? 1000 : 400}
-          height={isWide ? 800 : 250}
+          height={isWide ? 800 : 350}
         />
-        <div className='next-button' onClick={handlePage}>
-          <h1>{'>'}</h1>
-        </div>
+      </div>
+      <div className='next-button' onClick={handlePage}>
+        <h1>{'>'}</h1>
       </div>
     </Modal>
   );

@@ -1,7 +1,7 @@
 import { getMediaWidth, matchNotesToAudioObject } from '@/utils/functions';
 import { whiteKeys, blackKeys } from '@/utils/constants';
 import { PianoBackground } from '@/components/Piano/PianoBackground';
-import { checkCurrentSolution } from '@/utils/functions';
+import { correctKeyPlayed } from '@/utils/functions';
 import useGeneralStore from '@/state/store';
 
 import './piano.css';
@@ -19,17 +19,18 @@ import './piano.css';
 const PianoWithKeys = () => {
   const isWide = getMediaWidth();
   const playKey = useGeneralStore((state) => state.playKey);
-  const resetStreaK = useGeneralStore((state) => state.resetStreak);
-  const keysPlayed = useGeneralStore((state) => state.keysPlayed);
+  const streak = useGeneralStore((state) => state.streak);
+  const increaseStreak = useGeneralStore((state) => state.increaseStreak);
+  const resetStreak = useGeneralStore((state) => state.resetStreak);
 
   const handleClick = (pKey: string) => {
     const audio = matchNotesToAudioObject(pKey);
     audio.play();
-    if (checkCurrentSolution(keysPlayed.concat(pKey))) return playKey(pKey);
-    return resetStreaK();
+    playKey(pKey);
+    if (correctKeyPlayed(streak, pKey)) return increaseStreak();
+    else return resetStreak();
   };
 
-  console.log(keysPlayed);
   return (
     <div className='piano'>
       <PianoBackground isWide={isWide} />

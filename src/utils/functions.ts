@@ -11,7 +11,7 @@ import { solution } from './constants';
 
 export const getMediaWidth = () => {
   const width = document.documentElement.clientWidth;
-  return width > 1250;
+  return width > 1000;
 };
 
 export const matchNotesToAudioObject = (note: string) => {
@@ -25,9 +25,7 @@ export const matchNotesToAudioObject = (note: string) => {
   else return new Audio(wood);
 };
 
-export const checkCurrentSolution = (proposedSolution: Array<string>) => {
-  for (let i = 0; i < proposedSolution.length; i++) {
-    if (solution[i] !== proposedSolution[i]) return false;
-  }
+export const correctKeyPlayed = (index: number, keyPlayed: string) => {
+  if (solution[index] !== keyPlayed) return false;
   return true;
 };

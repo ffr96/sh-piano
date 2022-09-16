@@ -81,11 +81,11 @@ export const about = {
           appear in Midwich Elementary School after the Old Man's Hand puzzle.
           Harry Mason receives the Silver Medallion after successfully
           completing the piano puzzle.
-          <p>
-            It's a rather interesting puzzle that the player comes across after
-            a couple of hours of playtime. This site is a simplified demo of
-            said puzzle
-          </p>
+        </p>
+        <p>
+          It's a rather interesting puzzle that the player comes across after a
+          couple of hours of playtime. This site is a simplified demo of said
+          puzzle
         </p>
       </div>
     ),
