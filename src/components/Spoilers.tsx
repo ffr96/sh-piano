@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './spoiler.css';
 
 const hide = (n: number) => '*'.repeat(n);
 
@@ -18,11 +19,11 @@ const Spoilers = ({ tips }: { tips: Array<string> }) => {
       {tips &&
         tips.map((tip, i) => {
           return (
-            <li key={i}>
+            <div className='spoiler-content' key={i}>
               <span onClick={() => handleClick(i)}>
                 {showTips[i] ? tip : hide(tip.length)}
               </span>
-            </li>
+            </div>
           );
         })}
     </div>

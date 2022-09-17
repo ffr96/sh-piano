@@ -13,7 +13,7 @@ const AboutModal = () => {
   return (
     <Modal opened={aboutView} onClose={handleClose}>
       <h1 style={{ textAlign: 'center' }}>{about[lang].title}</h1>
-      <h2>{about[lang].content}</h2>
+      <h3>{about[lang].content}</h3>
     </Modal>
   );
 };

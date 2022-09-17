@@ -122,11 +122,11 @@ export const tips = {
   eng: {
     title: 'Tips',
     warning: (
-      <h2>
+      <h3>
         These tips are <b>NOT</b> given when you encounter the puzzle. So if
         you'd like to stay true to the original experience, you might not want
         to read them.
-      </h2>
+      </h3>
     ),
     content: [
       'Clicking once or "sustaining" the key has the same effect.',
