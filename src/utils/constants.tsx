@@ -67,8 +67,8 @@ export const headerInfo = {
 export const about = {
   eng: {
     title: 'About',
-    content: (
-      <div>
+    info: (
+      <h3>
         The{' '}
         <a href='https://silenthill.fandom.com/wiki/%22A_Tale_of_Birds_Without_a_Voice%22'>
           Silent Hill Piano Puzzle
@@ -76,24 +76,21 @@ export const about = {
         is a puzzle featured in the first entry of the{' '}
         <a href='https://en.wikipedia.org/wiki/Silent_Hill'>Silent Hill</a>{' '}
         franchise.
-        <p>
-          The Piano Puzzle appears in Silent Hill, and is the second puzzle to
+      </h3>
+    ),
+    content: `The Piano Puzzle appears in Silent Hill, and is the second puzzle to
           appear in Midwich Elementary School after the Old Man's Hand puzzle.
           Harry Mason receives the Silver Medallion after successfully
           completing the piano puzzle.
-        </p>
-        <p>
-          It's a rather interesting puzzle that the player comes across after a
-          couple of hours of playtime. This site is a simplified demo of said
-          puzzle
-        </p>
-      </div>
-    ),
+
+          The center keys (seven whites, five blacks) are covered in blood.
+          Harry must hit the right sequence of keys for the Silver Medallion to
+          fall over — the last item needed to unlock the clock tower doors.`,
   },
   spa: {
     title: 'Acerca de...',
-    content: (
-      <div>
+    info: (
+      <h3>
         El{' '}
         <a href='https://silenthill.fandom.com/es/wiki/Un_cuento_de_p%C3%A1jaros_sin_voz'>
           Acertijo del Piano
@@ -102,19 +99,14 @@ export const about = {
         <a href='https://es.wikipedia.org/wiki/Silent_Hill_(franquicia)'>
           Silent Hill
         </a>
-        <p>
-          "Un cuento de pájaros sin voz" es una nota escrita con sangre que
+      </h3>
+    ),
+    content: `"Un cuento de pájaros sin voz" es una nota escrita con sangre que
           Harry Mason puede encontrar en la sala de música en el segundo piso de
           la escuela primaria Midwich. La nota ofrece pistas para lograr
           resolver el Puzzle del piano, el cual se encuentra en la misma sala.
-        </p>
-        <p>
-          Es un acertijo bastante interesante, el cual aparece unas horas luego
-          de comenzar el juego. Este sitio es una versión simplificada del
-          mismo.
-        </p>
-      </div>
-    ),
+          Al resolver el puzzle, el Medallón de plata caerá desde arriba de la nota 
+          hacia el suelo, dándole a Harry la oportunidad de tomarlo; el mismo es necesario para abrir la puerta de la torre del reloj.`,
   },
 };
 
@@ -138,10 +130,10 @@ export const tips = {
   spa: {
     title: 'Tips',
     warning: (
-      <h2>
+      <h3>
         Estos tips <b>NO</b> fueron dados originalmente al encontrar el puzzle.
         Si deseas experimentar el puzzle de manera original no deberías leerlos
-      </h2>
+      </h3>
     ),
     content: [
       'Hacer un click o mantener "presionada" la tecla tiene el mismo efecto.',

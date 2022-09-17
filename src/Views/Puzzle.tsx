@@ -30,7 +30,7 @@ const PuzzleModal = () => {
 
   return (
     <Modal opened={opened} onClose={handleClose} transparent>
-      <div className='puzzle-container'>
+      <div className='puzzle-container' onClick={handlePage}>
         {page === 0 && puzzle.title && <h1>{puzzle.title}</h1>}
         {puzzle.stranzas.slice(page, page + 3).map((text, i) => {
           return <h2 key={i}>{text}</h2>;
@@ -38,13 +38,11 @@ const PuzzleModal = () => {
       </div>
       <div className='image-container'>
         <img
+          loading='eager'
           src={background}
           width={isWide ? 1000 : 400}
-          height={isWide ? 800 : 350}
+          height={isWide ? 800 : 400}
         />
-      </div>
-      <div className='next-button' onClick={handlePage}>
-        <h1>{'>'}</h1>
       </div>
     </Modal>
   );

@@ -12,7 +12,7 @@
 .puzzle-container * {
   font-family: Palatino;
   position: relative;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background: -webkit-radial-gradient(bottom, #3ede69, #d2f5bf);
   -webkit-text-stroke: 0.5px #000;
   -webkit-background-clip: text;
@@ -24,8 +24,11 @@
   position: absolute;
   z-index: 10;
   color: #3ede69;
+  width: 100%;
   bottom: 0;
-  left: 50%;
+  left: 0%;
+  font-size: 2em;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -40,7 +43,10 @@
 @media screen and (max-width: 1000px) {
   .next-button {
     position: absolute;
-    left: 100%;
-    bottom: 50%;
+    top: 0;
+  }
+
+  .puzzle-container * {
+    top: -20px;
   }
 }

@@ -26,6 +26,7 @@ export const Modal = ({
         {props.children}
         {transparent == undefined && (
           <img
+            loading='eager'
             src={haloBg}
             alt='Halo of the sun logo'
             width={'35%'}

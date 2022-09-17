@@ -38,6 +38,7 @@ const PianoWithKeys = () => {
         {whiteKeys.map((pKey, i) => {
           return (
             <img
+              loading='eager'
               key={i}
               width={isWide ? 100 : 31.5}
               height={isWide ? 155 : 51.6}
@@ -52,6 +53,7 @@ const PianoWithKeys = () => {
         {blackKeys.map((pKey, i) => {
           return (
             <img
+              loading='eager'
               key={i}
               width={isWide ? 55 : 17.5}
               height={isWide ? 280 : 92}
