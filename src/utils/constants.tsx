@@ -25,7 +25,7 @@ export const puzzle = {
     ],
   },
   spa: {
-    title: 'Un cuento de pájaros sin voz',
+    title: '"Un cuento de pájaros sin voz"',
     stranzas: [
       `Primero voló el avaro pelícano,
       ansioso de ser recompensado,
@@ -121,10 +121,9 @@ export const tips = {
       </h3>
     ),
     content: [
-      'Clicking once or "sustaining" the key has the same effect.',
       'The birds are either black or white.',
       'Pay special attention to how the poem "places" the birds.',
-      'The title says a lot.',
+      'The title is, perhaps, the biggest clue.',
     ],
   },
   spa: {
@@ -136,10 +135,9 @@ export const tips = {
       </h3>
     ),
     content: [
-      'Hacer un click o mantener "presionada" la tecla tiene el mismo efecto.',
       'Los pájaros son blancos o negros.',
       'Presta atención cómo el poema "ubica" a los pájaros',
-      'El título dice mucho.',
+      'El título es, probablemente, la pista mas grande.',
     ],
   },
 };

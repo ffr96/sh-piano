@@ -1,5 +1,4 @@
 import './header.css';
-import { useState } from 'react';
 import useStore from '@/state/store';
 import { headerInfo } from '@/utils/constants';
 
