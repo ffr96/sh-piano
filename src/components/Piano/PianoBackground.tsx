@@ -1,4 +1,4 @@
-import fullpiano from '@/assets/piano.png';
+import fullpiano from '@/assets/piano.jpg';
 
 export const PianoBackground = ({ isWide }: { isWide: boolean }) => {
   return (

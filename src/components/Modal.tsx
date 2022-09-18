@@ -1,6 +1,6 @@
 import { getMediaWidth } from '@/utils/functions';
 import { Modal as MantineModal, ModalProps } from '@mantine/core';
-import haloBg from '@/assets/halo-of-the-sun.png';
+import haloBg from '@/assets/halo-of-the-sun.webp';
 
 import './modal.css';
 

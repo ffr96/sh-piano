@@ -1,6 +1,6 @@
 import { Modal } from '@/components/Modal';
 import { useEffect, useState } from 'react';
-import background from '@/assets/puzzle-bg.png';
+import background from '@/assets/puzzle-bg.jpg';
 import { getMediaWidth } from '@/utils/functions';
 import { puzzle as puzzles } from '@/utils/constants';
 import useGeneralStore from '@/state/store';
